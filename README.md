@@ -1,0 +1,1 @@
+I haven't done everything yet, but I found a solution to selecting through a loop.
