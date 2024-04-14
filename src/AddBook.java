@@ -26,22 +26,22 @@ public class AddBook {
         int choice = scanner.nextInt();
 
         if (choice == 1) {
-            System.out.printf("Titel: %s\nAuthor: %s\nPrice: %d $ \n", books.get(1).getTitle(), books.get(1).getAuthor(), books.get(1).getPrice());
+            System.out.printf("Title: %s\nAuthor: %s\nPrice: %d $ \n", books.get(1).getTitle(), books.get(1).getAuthor(), books.get(1).getPrice());
         }
         if (choice == 2) {
-            System.out.printf("Titel: %s\nAuthor: %s\nPrice: %d $ \n", books.get(2).getTitle(), books.get(2).getAuthor(), books.get(2).getPrice());
+            System.out.printf("Title: %s\nAuthor: %s\nPrice: %d $ \n", books.get(2).getTitle(), books.get(2).getAuthor(), books.get(2).getPrice());
         }
         if (choice == 3) {
-            System.out.printf("Titel: %s\nAuthor: %s\nPrice: %d $ \n", books.get(3).getTitle(), books.get(3).getAuthor(), books.get(3).getPrice());
+            System.out.printf("Title: %s\nAuthor: %s\nPrice: %d $ \n", books.get(3).getTitle(), books.get(3).getAuthor(), books.get(3).getPrice());
         }
     }
 
     private void printBookDetails2(HashMap<Integer, Book> books) {
-        System.out.printf("Titel: %s\nAuthor: %s\nPrice: %d $ \n", books.get(1).getTitle(), books.get(1).getAuthor(), books.get(1).getPrice());
+        System.out.printf("Title: %s\nAuthor: %s\nPrice: %d $ \n", books.get(1).getTitle(), books.get(1).getAuthor(), books.get(1).getPrice());
         System.out.println("---");
-        System.out.printf("Titel: %s\nAuthor: %s\nPrice: %d $ \n", books.get(2).getTitle(), books.get(2).getAuthor(), books.get(2).getPrice());
+        System.out.printf("Title: %s\nAuthor: %s\nPrice: %d $ \n", books.get(2).getTitle(), books.get(2).getAuthor(), books.get(2).getPrice());
         System.out.println("---");
-        System.out.printf("Titel: %s\nAuthor: %s\nPrice: %d $ \n", books.get(3).getTitle(), books.get(3).getAuthor(), books.get(3).getPrice());
+        System.out.printf("Title: %s\nAuthor: %s\nPrice: %d $ \n", books.get(3).getTitle(), books.get(3).getAuthor(), books.get(3).getPrice());
     }
 
 }
