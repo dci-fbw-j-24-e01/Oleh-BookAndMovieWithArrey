@@ -1,10 +1,11 @@
 public class Movie {
-    private  String title;
-    private  MovieGenre genre;
-    private  int price;
-    private String director;
-    private  long productId;
 
+    private String title;
+    private MovieGenre genre;
+    private int price;
+    private String director;
+    private long productId;
+    private boolean foundId;
 
 
     public Movie(String title, MovieGenre genre, int price, long productId) {
@@ -17,10 +18,14 @@ public class Movie {
     public Movie(String title, MovieGenre genre, int price, String director, long productId) {
         this(title, genre, price, productId);
         this.director = director;
-       
+
     }
 
-    public  String getTitle() {
+    public Movie(boolean foundId) {
+        this.foundId = foundId;
+    }
+
+    public String getTitle() {
         return title;
     }
 
@@ -28,7 +33,7 @@ public class Movie {
         this.title = title;
     }
 
-    public  MovieGenre getGenre() {
+    public MovieGenre getGenre() {
         return genre;
     }
 
@@ -36,7 +41,7 @@ public class Movie {
         this.genre = genre;
     }
 
-    public  int getPrice() {
+    public int getPrice() {
         return price;
     }
 
@@ -52,11 +57,19 @@ public class Movie {
         this.director = director;
     }
 
-    public  long getProductId() {
+    public long getProductId() {
         return productId;
     }
 
     public void setProductId(long productId) {
         this.productId = productId;
+    }
+
+    public boolean isFoundId() {
+        return foundId;
+    }
+
+    public void setFoundId(boolean foundId) {
+        this.foundId = foundId;
     }
 }
